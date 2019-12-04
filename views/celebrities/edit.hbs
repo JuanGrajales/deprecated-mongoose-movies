@@ -25,7 +25,7 @@
 
 <h2>Edit {{celeb.Name}} Profile </h2>
 
-<form action="/celebrities/{{celeb._id}}/update" method="POST">
+<form action="/celebrities/update/{{celeb._id}}" method="POST">
 {{!-- we are passing the ID in the url because whichever route we submit this form to --}}
 {{!-- need to know which book to edit, so it needs to know the ID --}}
 {{!-- the id can be passed through params like I did right here above --}}
@@ -43,7 +43,7 @@
 <input type="text" name="catchPhrase" value="{{celeb.catchPhrase}}">
 
 <p>Image</p>
-<input type="text" name="occupation" value="{{celeb.image}}" >
+<input type="text" name="image" value="{{celeb.image}}" >
 
 
 <input type="hidden" value="{{celeb._id}}" name="theID">
