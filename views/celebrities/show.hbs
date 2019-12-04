@@ -1,11 +1,11 @@
 {{!-- navigation bar --}}
 <div class="container-fluid nav-style">
   <div class="nav-left">
-    <a href="/">
+    <a href="/" class="nav-heading">
       <img class="logo" src="/images/logo.png" alt="logo" />
     </a>
     <a href="/" class="nav-heading">Home</a>
-    <a href="/" class="nav-heading">Movies</a>
+    <a href="/movies" class="nav-heading">Movies</a>
     {{!-- href is the request url --}}
     <a href="/celebrities" class="nav-heading">Celebrities</a>
   </div>
@@ -23,3 +23,25 @@
 
 <h1 style="padding-top: 4rem">Show all celebs</h1>
 
+    <a href="/celebrities/new" class="btn-lab-link btn-style2 btn-blue btn-add-celeb" >Add a celebrity</a>
+{{!-- <button class="btn-style2 btn-blue btn-add-celeb">
+  </button> --}}
+
+<div class="table">
+{{#each celebritiesArr}}
+
+  <ul> 
+    <li class="card">
+      <img src={{this.image}} class="card-img" alt={{this.name}} />
+      <a href="/celebrities/{{this._id}}">
+        <h3 class="card-title">{{this.name}}</h3>
+      </a>
+      <div class="card-info">{{this.occupation}}</div>
+      <div class="card-footer">
+        <div>{{this.catchPhrase}}</div>
+      </div>
+    </li>
+  </ul>
+
+{{/each}}
+</div>

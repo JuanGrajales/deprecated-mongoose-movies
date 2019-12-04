@@ -52,20 +52,33 @@
   transition: .25s;
   outline: none; }
 
+.btn-add-celeb {
+  color: black;
+  transform: translate(20rem, -3rem);
+  margin: 0;
+  outline: none;
+  border: none; }
+
+.btn-add-celeb:focus {
+  outline: none; }
+
 .btn-lab-link {
   background-color: #f7f7f7;
+  background-color: transparent;
   color: #8b8585;
   color: black;
   border-color: #f7f7f7;
   transition: .25s;
   text-decoration: none;
   outline: none;
-  border: none; }
+  border: none;
+  text-align: center; }
 
 .btn-lab-link:hover {
   background-color: #f7f7f7;
+  background-color: #007bff;
   color: black;
-  color: #8b8585;
+  color: #383838;
   border-color: #f7f7f7;
   transition: .25s;
   text-decoration: none;

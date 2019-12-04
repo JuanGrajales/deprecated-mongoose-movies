@@ -5,7 +5,7 @@
       <img class="logo" src="/images/logo.png" alt="logo" />
     </a>
     <a href="/" class="nav-heading">Home</a>
-    <a href="/" class="nav-heading">Movies</a>
+    <a href="/movies" class="nav-heading">Movies</a>
     {{!-- href is the request url --}}
     <a href="/celebrities" class="nav-heading">Celebrities</a>
   </div>
@@ -21,4 +21,20 @@
   </div>
 </div>
 
-<h1 style="padding-top: 4rem">form to add a celeb</h1>
+<h1 style="padding-top: 4rem">Add a celebrity</h1>
+
+<form action="/celebrities/new/save" method="POST">
+  <p>Name</p>
+  <input type="text" name="name">
+
+  <p>Occupation</p>
+  <input type="text" name="occupation">
+
+  <p>Catch Phrase</p>
+  <input type="text" name="catchPhrase">
+
+  <p>Image</p>
+  <input type="text" name="image">
+
+  <button>Save</button>
+</form>

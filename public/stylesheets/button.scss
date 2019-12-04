@@ -56,8 +56,21 @@
   outline: none;
 }
 
+.btn-add-celeb {
+  color: black;
+  transform: translate(20rem, -3rem);
+  margin: 0;
+  outline: none;
+  border: none;
+}
+
+.btn-add-celeb:focus {
+  outline: none;
+}
+
 .btn-lab-link {
   background-color: #f7f7f7;
+  background-color: transparent;
   color:  rgb(139, 133, 133);
   color:  black;
   border-color: #f7f7f7;
@@ -65,12 +78,14 @@
   text-decoration: none;
   outline: none;
   border: none;
+  text-align: center;
 }
 
 .btn-lab-link:hover {
   background-color: #f7f7f7;
+  background-color: #007bff;
   color:  black;
-  color:  rgb(139, 133, 133);
+  color:  rgb(56, 56, 56);
   border-color: #f7f7f7;
   transition: .25s;
   text-decoration: none;
