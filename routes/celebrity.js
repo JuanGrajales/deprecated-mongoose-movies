@@ -36,6 +36,21 @@ router.post('/celebrities/new/save', (req, res, next)=>{
   })
 });
 
+router.get('/celebrities/edit/:celebID', (req, res, next)=>{
+  let id = req.params.celebID;
+
+  Celebrity.findById(id)
+  .then((oneCeleb)=>{
+    res.render('celebrities/edit', {celeb: oneCeleb})
+  })
+  .catch((err)=>{
+    next(err);
+  })
+})
+
+
+
+// show individual celeb details
 router.get('/celebrities/:celebID', (req, res, next)=>{
   let id = req.params.celebID;
 
@@ -47,5 +62,12 @@ router.get('/celebrities/:celebID', (req, res, next)=>{
     next(err);
   })
 })
+
+
+
+
+
+
+
 
 module.exports = router;
