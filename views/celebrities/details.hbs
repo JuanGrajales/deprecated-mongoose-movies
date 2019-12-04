@@ -21,15 +21,13 @@
   </div>
 </div>
 
-<h1 style="padding-top: 4rem">Show individual celeb details</h1>
+<h1 style="padding-top: 4rem">{{celeb.name}} profile</h1>
 
 <div class="table">
   <ul> 
     <li class="card">
       <img src={{celeb.image}} class="card-img" alt={{celeb.name}} />
-      <a href="/celebrities/{{celeb._id}}">
-        <h3 class="card-title">{{celeb.name}}</h3>
-      </a>
+      <h3 class="card-title">{{celeb.name}}</h3>
       <div class="card-info">{{celeb.occupation}}</div>
       <div class="card-footer">
         <div>{{celeb.catchPhrase}}</div>

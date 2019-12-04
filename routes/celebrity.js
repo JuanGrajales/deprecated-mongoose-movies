@@ -41,7 +41,7 @@ router.get('/celebrities/:celebID', (req, res, next)=>{
 
   Celebrity.findById(id)
   .then((oneCeleb)=>{
-    res.render('celebritries/details', {celeb: oneCeleb})
+    res.render('celebrities/details', {celeb: oneCeleb})
   })
   .catch((err)=>{
     next(err);
