@@ -40,6 +40,7 @@
 
 .card-title {
   /* background-color: rgb(0, 168, 197); */
+  color: black;
   height: 3.5rem;
   padding: .2rem 1rem;
   margin: 0rem;

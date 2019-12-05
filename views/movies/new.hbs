@@ -1,31 +1,10 @@
-{{!-- navigation bar --}}
-<div class="container-fluid nav-style">
-  <div class="nav-left">
-    <a href="/">
-      <img class="logo" src="/images/logo.png" alt="logo" />
-    </a>
-    <a href="/" class="nav-heading">Home</a>
-    <a href="/movies" class="nav-heading">Movies</a>
-    {{!-- href is the request url --}}
-    <a href="/celebrities" class="nav-heading">Celebrities</a>
-  </div>
 
-  <div class="nav-middle">
-  </div>
-
-  <div class="nav-right">
-    <div class="search-box">
-      <input class="input-box"type="text" name="" placeholder="" />
-      <img class="search-img" src="/images/search.png" alt="search" />
-    </div>
-  </div>
-</div>
 
 <h1 style="padding-top: 4rem">Add a movie</h1>
 
 <form action="/movies/new/save" method="POST">
   <p>Title</p>
-  <input type="text" name="name">
+  <input type="text" name="title">
 
   <p>Director</p>
   <input type="text" name="director">
