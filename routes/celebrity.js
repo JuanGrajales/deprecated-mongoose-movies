@@ -97,11 +97,11 @@ router.post('/celebrities/update/:id', (req, res, next)=>{
 router.post('/celebrities/delete/:theID', (req, res, next)=>{
   Celebrity.findByIdAndRemove(req.params.theID)
   .then((response)=>{
-    res.redirect('/celebrities/show');
+    res.redirect('/celebrities');
   })
   .catch((err)=>{
     next(err)
-  })
+  }) 
 
 })
 

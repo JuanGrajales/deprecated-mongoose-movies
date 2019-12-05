@@ -23,9 +23,7 @@
 
 <h1 style="padding-top: 4rem">All celebrities</h1>
 
-    <a href="/celebrities/new" class="btn-lab-link btn-style2 btn-blue btn-add-celeb" >Add a celebrity</a>
-{{!-- <button class="btn-style2 btn-blue btn-add-celeb">
-  </button> --}}
+<a href="/celebrities/new" class="btn-lab-link btn-style2 btn-blue btn-add-celeb" >Add a celebrity</a>
 
 <div class="table">
 {{#each celebritiesArr}}
@@ -40,7 +38,9 @@
       <div class="card-footer">
         <div>{{this.catchPhrase}}</div>
         <a href="/celebrities/edit/{{this._id}}" class="" >Edit</a>
-        <a href="/celebrities/delete/{{this._id}}" class="" >Delete</a>
+        <form action="/celebrities/delete/{{this._id}}" method="POST">
+          <button>Delete</button>
+        </form>
       </div>
     </li>
   </ul>
